@@ -1,16 +1,62 @@
-# meteo_senegal
+Meteo Senegal
+=============
 
-A new Flutter project.
+Meteo Senegal est une application Flutter permettant d’afficher la météo actuelle et les prévisions à court terme (sur 24h) pour les villes du Sénégal et d'ailleurs, en utilisant l'API publique OpenWeatherMap.
 
-## Getting Started
+Fonctionnalités
+---------------
 
-This project is a starting point for a Flutter application.
+- Recherche météo par ville
+- Affichage :
+  - Température actuelle
+  - Conditions météorologiques (nuageux, ensoleillé, etc.)
+  - Humidité, vent
+  - Icône météo dynamique
+- Prévisions sur 24h (3h par 3h)
+- Gestion des erreurs (ville introuvable, pas de connexion)
+- Interface responsive avec Card, ListView, Icons, etc.
+- Code structuré en dossiers : models, services, views
 
-A few resources to get you started if this is your first Flutter project:
+Technologies utilisées
+----------------------
+- Flutter 3.29.2
+- Dart
+- Package http
+- API REST : OpenWeatherMap
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Installation
+------------
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Cloner le dépôt :
+   ```bash
+   git clone https://github.com/MariemeKmr/AppFlutterMeteo.git
+   cd AppFlutterMeteo
+
+2. Installer les dépendances :
+   flutter pub get
+
+3. Lancer l’application :
+   flutter run
+
+Configuration
+-------------
+
+Avant de lancer l’application, insérer votre clé API OpenWeatherMap dans le fichier weather_api.dart :
+
+static const String _apiKey = 'VOTRE_CLE_API';
+
+Vous pouvez obtenir une clé gratuite ici : https://openweathermap.org/appid
+
+Structure du projet
+-------------------
+
+lib/
+├── models/        # Modèles de données (Weather, Forecast)
+├── services/      # Appels API (WeatherApi)
+├── views/         # Écrans UI (WeatherScreen, SearchScreen)
+├── main.dart      # Point d’entrée de l’app
+
+Auteur
+------
+
+Réalisé par Marieme KAMARA dans le cadre d’un TP Flutter à l’ESP UCAD.
