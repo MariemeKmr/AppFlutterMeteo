@@ -101,7 +101,7 @@ class _SearchScreenState extends State<SearchScreen> {
               Text(_error!, style: const TextStyle(color: Colors.red)),
             const Spacer(),
             const Text(
-              'Powered by AN3M',
+              'Powered by Marieme Kamara',
               style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic),
             ),
           ],

@@ -270,7 +270,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
             const SizedBox(height: 10),
             // Footer
             const Text(
-              'Powered by AN3M',
+              'Powered by Marieme Kamara',
               style: TextStyle(
                 fontSize: 12,
                 fontStyle: FontStyle.italic,
